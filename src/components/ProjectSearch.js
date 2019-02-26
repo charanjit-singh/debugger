@@ -125,13 +125,12 @@ export class ProjectSearch extends Component<Props, State> {
   }
 
   getModifiers = () => {
-
     return {
       caseSensitive: this.state.caseSensitive,
       regexMatch: this.state.regexMatch,
       wholeWord: this.state.wholeWord
     };
-  }
+  };
 
   doSearch(searchTerm: string, modifiers: SearchModifiers) {
     this.props.searchSources(searchTerm, modifiers);
