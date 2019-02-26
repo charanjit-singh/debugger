@@ -255,6 +255,7 @@ class SearchInput extends Component<Props, State> {
   }
 
   renderNav() {
+
     const { count, handleNext, handlePrev, handleGetModifiers } = this.props;
 
     let arrowNavigation = [];
